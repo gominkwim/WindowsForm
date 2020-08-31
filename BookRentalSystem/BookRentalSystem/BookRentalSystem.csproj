@@ -176,6 +176,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControls\UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
@@ -193,6 +194,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manageBooks_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manageUsers_64px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
