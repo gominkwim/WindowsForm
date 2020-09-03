@@ -9,7 +9,7 @@ namespace BookRentalSystem.Models
     /// <summary>
     /// Contains all information about an author
     /// </summary>
-    class clsAuthor
+    class Author
     {
         #region Properties
         public int AuthorId { get; set; }

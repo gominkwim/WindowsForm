@@ -145,12 +145,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\clsAccount.cs" />
-    <Compile Include="Models\clsAuthor.cs" />
-    <Compile Include="Models\clsBook.cs" />
-    <Compile Include="Models\clsCategory.cs" />
-    <Compile Include="Models\clsHistory.cs" />
-    <Compile Include="Models\clsPublisher.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Author.cs" />
+    <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\History.cs" />
+    <Compile Include="Models\Publisher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControls\UC_BookRental.cs">
@@ -178,6 +178,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\UC_BookRental.resx">
+      <DependentUpon>UC_BookRental.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
     </EmbeddedResource>

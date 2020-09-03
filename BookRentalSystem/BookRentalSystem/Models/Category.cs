@@ -7,15 +7,13 @@ using System.Threading.Tasks;
 namespace BookRentalSystem.Models
 {
     /// <summary>
-    /// Contains all information about a history
+    /// Contains all information about a category
     /// </summary>
-    class clsHistory
+    class Category
     {
         #region Properties
-        public int HistoryId { get; set; }
-        public int BookId { get; set; }
-        public int AccountId { get; set; }
-        public DateTime RentDate { get; set; }
+        public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
         #endregion
     }
 }

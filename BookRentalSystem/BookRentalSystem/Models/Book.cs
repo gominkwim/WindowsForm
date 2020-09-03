@@ -9,7 +9,7 @@ namespace BookRentalSystem.Models
     /// <summary>
     /// Contains all information about a book
     /// </summary>
-    class clsBook
+    class Book
     {
         #region Properties
         public int BookId { get; set; }
