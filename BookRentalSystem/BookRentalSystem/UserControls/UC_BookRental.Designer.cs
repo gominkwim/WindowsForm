@@ -30,33 +30,50 @@
         {
             this.lblBookListTitle = new System.Windows.Forms.Label();
             this.dgvBookList = new System.Windows.Forms.DataGridView();
+            this.btnBookRentalClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookList)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBookListTitle
             // 
             this.lblBookListTitle.AutoSize = true;
-            this.lblBookListTitle.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBookListTitle.Location = new System.Drawing.Point(30, 52);
+            this.lblBookListTitle.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBookListTitle.Location = new System.Drawing.Point(40, 35);
             this.lblBookListTitle.Name = "lblBookListTitle";
-            this.lblBookListTitle.Size = new System.Drawing.Size(445, 51);
+            this.lblBookListTitle.Size = new System.Drawing.Size(346, 40);
             this.lblBookListTitle.TabIndex = 0;
             this.lblBookListTitle.Text = "Sky Library Book List";
             // 
             // dgvBookList
             // 
             this.dgvBookList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBookList.Location = new System.Drawing.Point(39, 152);
+            this.dgvBookList.Location = new System.Drawing.Point(40, 100);
             this.dgvBookList.Name = "dgvBookList";
             this.dgvBookList.RowHeadersWidth = 51;
             this.dgvBookList.RowTemplate.Height = 24;
             this.dgvBookList.Size = new System.Drawing.Size(655, 380);
             this.dgvBookList.TabIndex = 1;
             // 
+            // btnBookRentalClose
+            // 
+            this.btnBookRentalClose.BackColor = System.Drawing.SystemColors.Control;
+            this.btnBookRentalClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnBookRentalClose.FlatAppearance.BorderSize = 0;
+            this.btnBookRentalClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBookRentalClose.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookRentalClose.Location = new System.Drawing.Point(692, 3);
+            this.btnBookRentalClose.Name = "btnBookRentalClose";
+            this.btnBookRentalClose.Size = new System.Drawing.Size(40, 40);
+            this.btnBookRentalClose.TabIndex = 4;
+            this.btnBookRentalClose.Text = "X";
+            this.btnBookRentalClose.UseVisualStyleBackColor = false;
+            this.btnBookRentalClose.Click += new System.EventHandler(this.btnBookRentalClose_Click);
+            // 
             // UC_BookRental
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnBookRentalClose);
             this.Controls.Add(this.dgvBookList);
             this.Controls.Add(this.lblBookListTitle);
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -65,11 +82,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
 
         private System.Windows.Forms.Label lblBookListTitle;
         private System.Windows.Forms.DataGridView dgvBookList;
+        private System.Windows.Forms.Button btnBookRentalClose;
     }
 }

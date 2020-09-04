@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace BookRentalSystem.UserControls
 {
-    public partial class UC_BookRental : UserControl
+    public partial class UC_ManageBooks : UserControl
     {
-        public UC_BookRental()
+        public UC_ManageBooks()
         {
             InitializeComponent();
-        }
-
-        private void btnBookRentalClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

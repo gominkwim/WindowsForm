@@ -58,6 +58,7 @@
             this.pBox_Library = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel_Main = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panelLeftNav.SuspendLayout();
             this.panelManageUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_manageUsers)).BeginInit();
@@ -74,6 +75,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_Library)).BeginInit();
+            this.panel_Main.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLeftNav
@@ -158,6 +160,7 @@
             this.panelBookRental.Name = "panelBookRental";
             this.panelBookRental.Size = new System.Drawing.Size(190, 50);
             this.panelBookRental.TabIndex = 4;
+            this.panelBookRental.Click += new System.EventHandler(this.panelBookRental_Click);
             // 
             // lblBookRental
             // 
@@ -168,6 +171,7 @@
             this.lblBookRental.Size = new System.Drawing.Size(119, 22);
             this.lblBookRental.TabIndex = 23;
             this.lblBookRental.Text = "Book Rental";
+            this.lblBookRental.Click += new System.EventHandler(this.lblBookRental_Click);
             // 
             // pictureBox_bookRental
             // 
@@ -178,6 +182,7 @@
             this.pictureBox_bookRental.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_bookRental.TabIndex = 22;
             this.pictureBox_bookRental.TabStop = false;
+            this.pictureBox_bookRental.Click += new System.EventHandler(this.pictureBox_bookRental_Click);
             // 
             // panelAccount
             // 
@@ -187,6 +192,7 @@
             this.panelAccount.Name = "panelAccount";
             this.panelAccount.Size = new System.Drawing.Size(190, 50);
             this.panelAccount.TabIndex = 3;
+            this.panelAccount.Click += new System.EventHandler(this.panelAccount_Click);
             // 
             // lblAccount
             // 
@@ -197,6 +203,7 @@
             this.lblAccount.Size = new System.Drawing.Size(92, 22);
             this.lblAccount.TabIndex = 23;
             this.lblAccount.Text = "Account";
+            this.lblAccount.Click += new System.EventHandler(this.lblAccount_Click);
             // 
             // pictureBox_account
             // 
@@ -207,6 +214,7 @@
             this.pictureBox_account.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_account.TabIndex = 22;
             this.pictureBox_account.TabStop = false;
+            this.pictureBox_account.Click += new System.EventHandler(this.pictureBox_account_Click);
             // 
             // panelHome
             // 
@@ -355,11 +363,27 @@
             // 
             // panel_Main
             // 
+            this.panel_Main.Controls.Add(this.btnClose);
             this.panel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Main.Location = new System.Drawing.Point(194, 0);
             this.panel_Main.Name = "panel_Main";
             this.panel_Main.Size = new System.Drawing.Size(735, 537);
             this.panel_Main.TabIndex = 1;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.SystemColors.Control;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(692, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(40, 40);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // Form1
             // 
@@ -394,6 +418,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_Library)).EndInit();
+            this.panel_Main.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -428,6 +453,7 @@
         private System.Windows.Forms.PictureBox pictureBox_bookRental;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.PictureBox pictureBox_account;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 
