@@ -80,5 +80,23 @@ namespace BookRentalSystem
             UC_BookRental ucb = new UC_BookRental();
             AddControlsToPanel(ucb);
         }
+
+        private void panelManageBooks_Click(object sender, EventArgs e)
+        {
+            UC_ManageBooks ucmb = new UC_ManageBooks();
+            AddControlsToPanel(ucmb);
+        }
+
+        private void lblManageBooks_Click(object sender, EventArgs e)
+        {
+            UC_ManageBooks ucmb = new UC_ManageBooks();
+            AddControlsToPanel(ucmb);
+        }
+
+        private void pictureBox_manageBooks_Click(object sender, EventArgs e)
+        {
+            UC_ManageBooks ucmb = new UC_ManageBooks();
+            AddControlsToPanel(ucmb);
+        }
     }
 }

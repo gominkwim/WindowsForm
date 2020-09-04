@@ -131,6 +131,7 @@
             this.panelManageBooks.Name = "panelManageBooks";
             this.panelManageBooks.Size = new System.Drawing.Size(190, 50);
             this.panelManageBooks.TabIndex = 5;
+            this.panelManageBooks.Click += new System.EventHandler(this.panelManageBooks_Click);
             // 
             // lblManageBooks
             // 
@@ -141,6 +142,7 @@
             this.lblManageBooks.Size = new System.Drawing.Size(147, 22);
             this.lblManageBooks.TabIndex = 23;
             this.lblManageBooks.Text = "Manage Books";
+            this.lblManageBooks.Click += new System.EventHandler(this.lblManageBooks_Click);
             // 
             // pictureBox_manageBooks
             // 
@@ -151,6 +153,7 @@
             this.pictureBox_manageBooks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_manageBooks.TabIndex = 22;
             this.pictureBox_manageBooks.TabStop = false;
+            this.pictureBox_manageBooks.Click += new System.EventHandler(this.pictureBox_manageBooks_Click);
             // 
             // panelBookRental
             // 

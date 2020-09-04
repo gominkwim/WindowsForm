@@ -37,6 +37,7 @@
             this.panel_BottomHistory = new System.Windows.Forms.Panel();
             this.dataGridView_History = new System.Windows.Forms.DataGridView();
             this.lblHistoryTitle = new System.Windows.Forms.Label();
+            this.btnReturn = new System.Windows.Forms.Button();
             this.panel_Top.SuspendLayout();
             this.panel_BottomHistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_History)).BeginInit();
@@ -53,7 +54,7 @@
             this.panel_Top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Top.Location = new System.Drawing.Point(0, 0);
             this.panel_Top.Name = "panel_Top";
-            this.panel_Top.Size = new System.Drawing.Size(735, 160);
+            this.panel_Top.Size = new System.Drawing.Size(735, 140);
             this.panel_Top.TabIndex = 0;
             // 
             // btnHomeClose
@@ -75,7 +76,7 @@
             // 
             this.lblMemberName.AutoSize = true;
             this.lblMemberName.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMemberName.Location = new System.Drawing.Point(120, 110);
+            this.lblMemberName.Location = new System.Drawing.Point(119, 90);
             this.lblMemberName.Margin = new System.Windows.Forms.Padding(0);
             this.lblMemberName.Name = "lblMemberName";
             this.lblMemberName.Size = new System.Drawing.Size(143, 34);
@@ -86,7 +87,7 @@
             // 
             this.lblHi.AutoSize = true;
             this.lblHi.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHi.Location = new System.Drawing.Point(85, 110);
+            this.lblHi.Location = new System.Drawing.Point(84, 90);
             this.lblHi.Margin = new System.Windows.Forms.Padding(0);
             this.lblHi.Name = "lblHi";
             this.lblHi.Size = new System.Drawing.Size(41, 34);
@@ -97,7 +98,7 @@
             // 
             this.lblRole.AutoSize = true;
             this.lblRole.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRole.Location = new System.Drawing.Point(500, 110);
+            this.lblRole.Location = new System.Drawing.Point(485, 100);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(218, 23);
             this.lblRole.TabIndex = 0;
@@ -107,7 +108,7 @@
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(170, 32);
+            this.lblWelcome.Location = new System.Drawing.Point(167, 25);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(475, 47);
             this.lblWelcome.TabIndex = 0;
@@ -117,12 +118,13 @@
             // panel_BottomHistory
             // 
             this.panel_BottomHistory.BackColor = System.Drawing.SystemColors.Control;
+            this.panel_BottomHistory.Controls.Add(this.btnReturn);
             this.panel_BottomHistory.Controls.Add(this.dataGridView_History);
             this.panel_BottomHistory.Controls.Add(this.lblHistoryTitle);
             this.panel_BottomHistory.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_BottomHistory.Location = new System.Drawing.Point(0, 162);
+            this.panel_BottomHistory.Location = new System.Drawing.Point(0, 146);
             this.panel_BottomHistory.Name = "panel_BottomHistory";
-            this.panel_BottomHistory.Size = new System.Drawing.Size(735, 375);
+            this.panel_BottomHistory.Size = new System.Drawing.Size(735, 391);
             this.panel_BottomHistory.TabIndex = 1;
             // 
             // dataGridView_History
@@ -144,6 +146,16 @@
             this.lblHistoryTitle.Size = new System.Drawing.Size(171, 34);
             this.lblHistoryTitle.TabIndex = 0;
             this.lblHistoryTitle.Text = "Rent History";
+            // 
+            // btnReturn
+            // 
+            this.btnReturn.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.Location = new System.Drawing.Point(588, 345);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(81, 35);
+            this.btnReturn.TabIndex = 2;
+            this.btnReturn.Text = "Return";
+            this.btnReturn.UseVisualStyleBackColor = true;
             // 
             // UC_Home
             // 
@@ -176,5 +188,6 @@
         private System.Windows.Forms.Label lblHistoryTitle;
         private System.Windows.Forms.DataGridView dataGridView_History;
         private System.Windows.Forms.Button btnHomeClose;
+        private System.Windows.Forms.Button btnReturn;
     }
 }

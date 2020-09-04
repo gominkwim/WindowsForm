@@ -16,5 +16,10 @@ namespace BookRentalSystem.UserControls
         {
             InitializeComponent();
         }
+
+        private void btnBookRentalClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
