@@ -66,6 +66,7 @@
             this.btnAddBook.TabIndex = 3;
             this.btnAddBook.Text = "Add";
             this.btnAddBook.UseVisualStyleBackColor = true;
+            this.btnAddBook.Click += new System.EventHandler(this.btnAddBook_Click);
             // 
             // btnEditBook
             // 
@@ -115,6 +116,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "UC_ManageBooks";
             this.Size = new System.Drawing.Size(735, 564);
+            this.Load += new System.EventHandler(this.UC_ManageBooks_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageBookList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

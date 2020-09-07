@@ -35,12 +35,12 @@
             this.lblRole = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.panel_BottomHistory = new System.Windows.Forms.Panel();
-            this.dataGridView_History = new System.Windows.Forms.DataGridView();
-            this.lblHistoryTitle = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.Button();
+            this.dataGridViewHistory = new System.Windows.Forms.DataGridView();
+            this.lblHistoryTitle = new System.Windows.Forms.Label();
             this.panel_Top.SuspendLayout();
             this.panel_BottomHistory.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_History)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHistory)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_Top
@@ -119,33 +119,13 @@
             // 
             this.panel_BottomHistory.BackColor = System.Drawing.SystemColors.Control;
             this.panel_BottomHistory.Controls.Add(this.btnReturn);
-            this.panel_BottomHistory.Controls.Add(this.dataGridView_History);
+            this.panel_BottomHistory.Controls.Add(this.dataGridViewHistory);
             this.panel_BottomHistory.Controls.Add(this.lblHistoryTitle);
             this.panel_BottomHistory.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_BottomHistory.Location = new System.Drawing.Point(0, 146);
             this.panel_BottomHistory.Name = "panel_BottomHistory";
             this.panel_BottomHistory.Size = new System.Drawing.Size(735, 391);
             this.panel_BottomHistory.TabIndex = 1;
-            // 
-            // dataGridView_History
-            // 
-            this.dataGridView_History.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_History.Location = new System.Drawing.Point(28, 36);
-            this.dataGridView_History.Name = "dataGridView_History";
-            this.dataGridView_History.RowHeadersWidth = 51;
-            this.dataGridView_History.RowTemplate.Height = 24;
-            this.dataGridView_History.Size = new System.Drawing.Size(675, 299);
-            this.dataGridView_History.TabIndex = 1;
-            // 
-            // lblHistoryTitle
-            // 
-            this.lblHistoryTitle.AutoSize = true;
-            this.lblHistoryTitle.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHistoryTitle.Location = new System.Drawing.Point(40, 0);
-            this.lblHistoryTitle.Name = "lblHistoryTitle";
-            this.lblHistoryTitle.Size = new System.Drawing.Size(171, 34);
-            this.lblHistoryTitle.TabIndex = 0;
-            this.lblHistoryTitle.Text = "Rent History";
             // 
             // btnReturn
             // 
@@ -156,6 +136,26 @@
             this.btnReturn.TabIndex = 2;
             this.btnReturn.Text = "Return";
             this.btnReturn.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewHistory
+            // 
+            this.dataGridViewHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHistory.Location = new System.Drawing.Point(28, 36);
+            this.dataGridViewHistory.Name = "dataGridViewHistory";
+            this.dataGridViewHistory.RowHeadersWidth = 51;
+            this.dataGridViewHistory.RowTemplate.Height = 24;
+            this.dataGridViewHistory.Size = new System.Drawing.Size(675, 299);
+            this.dataGridViewHistory.TabIndex = 1;
+            // 
+            // lblHistoryTitle
+            // 
+            this.lblHistoryTitle.AutoSize = true;
+            this.lblHistoryTitle.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHistoryTitle.Location = new System.Drawing.Point(40, 0);
+            this.lblHistoryTitle.Name = "lblHistoryTitle";
+            this.lblHistoryTitle.Size = new System.Drawing.Size(171, 34);
+            this.lblHistoryTitle.TabIndex = 0;
+            this.lblHistoryTitle.Text = "Rent History";
             // 
             // UC_Home
             // 
@@ -172,7 +172,7 @@
             this.panel_Top.PerformLayout();
             this.panel_BottomHistory.ResumeLayout(false);
             this.panel_BottomHistory.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_History)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHistory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -186,7 +186,7 @@
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Panel panel_BottomHistory;
         private System.Windows.Forms.Label lblHistoryTitle;
-        private System.Windows.Forms.DataGridView dataGridView_History;
+        private System.Windows.Forms.DataGridView dataGridViewHistory;
         private System.Windows.Forms.Button btnHomeClose;
         private System.Windows.Forms.Button btnReturn;
     }

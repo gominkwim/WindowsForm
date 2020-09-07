@@ -1,6 +1,6 @@
 ﻿namespace BookRentalSystem
 {
-    partial class Form1
+    partial class Form_Main
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main));
             this.panelLeftNav = new System.Windows.Forms.Panel();
             this.panelManageUsers = new System.Windows.Forms.Panel();
             this.lblManageUsers = new System.Windows.Forms.Label();

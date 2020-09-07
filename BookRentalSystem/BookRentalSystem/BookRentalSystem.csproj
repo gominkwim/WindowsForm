@@ -127,7 +127,9 @@
       <HintPath>..\packages\Bunifu.UI.WinForms.3.0.2\lib\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -139,11 +141,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BookData.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookData.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Author.cs" />
@@ -171,8 +178,17 @@
     <Compile Include="UserControls\UC_ManageBooks.Designer.cs">
       <DependentUpon>UC_ManageBooks.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Windows\Form_AddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Form_AddBook.Designer.cs">
+      <DependentUpon>Form_AddBook.cs</DependentUpon>
+    </Compile>
+    <None Include="BookData.dbml.layout">
+      <DependentUpon>BookData.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -193,6 +209,14 @@
     <EmbeddedResource Include="UserControls\UC_ManageBooks.resx">
       <DependentUpon>UC_ManageBooks.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Form_AddBook.resx">
+      <DependentUpon>Form_AddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BookData.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>BookData.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -224,6 +248,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\manageUsers_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
